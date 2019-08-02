@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DbAccessLayer.Models
+{
+    public class User_Role
+    {
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public int RoleID { get; set; }
+    }
+}
