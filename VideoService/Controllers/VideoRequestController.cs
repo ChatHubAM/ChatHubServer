@@ -12,7 +12,7 @@ namespace VideoService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize]
+    [Authorize]
     public class VideoRequestController : Controller
     {
         private readonly IVideoRepository videoRepository;

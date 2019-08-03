@@ -52,13 +52,13 @@ namespace RegistrationService.Controllers
         }
 
 
-        [HttpPost]
-        [Route("login")]
-        public bool CheckUser([FromBody] UserLogin user)
-        {
-            var isRegistered = userRepository.CheckUser(user);
-            return isRegistered;
-        }
+        //[HttpPost]
+        //[Route("login")]
+        //public bool CheckUser([FromBody] UserLogin user)
+        //{
+        //    var isRegistered = userRepository.CheckUser(user);
+        //    return isRegistered;
+        //}
         //public async Task<IEnumerable<UserDTO>> GetAllUsers()
         //{
         //    return userRepository.GetAllUsersFromDb();

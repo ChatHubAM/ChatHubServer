@@ -38,6 +38,7 @@ namespace IdentityServer
             {
                 new ApiResource("ActiveUserService", "Active Users Service"),
                 new ApiResource("MessageService", "Message Service"),
+                new ApiResource("VideoService", "Video Service"),
             };
         }
 
@@ -63,7 +64,7 @@ namespace IdentityServer
                     },
 
                     // scopes that client has access to
-                    AllowedScopes = { "ActiveUserService", "MessageService" }
+                    AllowedScopes = { "ActiveUserService", "MessageService", "VideoService" }
                 }
             };
         }

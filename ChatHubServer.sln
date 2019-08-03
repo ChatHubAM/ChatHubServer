@@ -9,11 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizationService", "Ide
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbAccessLayer", "DbAccessLayer\DbAccessLayer.csproj", "{0E7B5010-ACD6-4F9A-891B-21BC0E484D05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActiveUserService", "..\VideoChat-master\LocalIPUpdater\LocalIPUpdater\ActiveUserService.csproj", "{99DB3CEB-7F37-4418-A339-15F483A4CFA6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageService", "MessageService\MessageService.csproj", "{5515C129-FCDD-43A6-AA81-20CD73B20F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoService", "VideoService\VideoService.csproj", "{13F0D360-6AA7-426C-A50C-F850518D6036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoService", "VideoService\VideoService.csproj", "{13F0D360-6AA7-426C-A50C-F850518D6036}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{0E7B5010-ACD6-4F9A-891B-21BC0E484D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E7B5010-ACD6-4F9A-891B-21BC0E484D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E7B5010-ACD6-4F9A-891B-21BC0E484D05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99DB3CEB-7F37-4418-A339-15F483A4CFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99DB3CEB-7F37-4418-A339-15F483A4CFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99DB3CEB-7F37-4418-A339-15F483A4CFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99DB3CEB-7F37-4418-A339-15F483A4CFA6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5515C129-FCDD-43A6-AA81-20CD73B20F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5515C129-FCDD-43A6-AA81-20CD73B20F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5515C129-FCDD-43A6-AA81-20CD73B20F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
