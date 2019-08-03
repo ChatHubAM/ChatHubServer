@@ -34,15 +34,15 @@ namespace VideoService
                 options.UseSqlServer(Configuration.GetConnectionString("ChatHubDatabase"));
             });
 
-            //services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
-            //       .AddIdentityServerAuthentication(options =>
-            //       {
-            //           options.Authority = "http://localhost:5000";
-            //           options.RequireHttpsMetadata = false;
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                   .AddIdentityServerAuthentication(options =>
+                   {
+                       options.Authority = "http://localhost:5000";
+                       options.RequireHttpsMetadata = false;
 
-            //           options.ApiName = "VideoService";
-            //       }
-            //   );
+                       options.ApiName = "VideoService";
+                   }
+               );
 
             services.AddScoped<IVideoRepository, VideoRepository>();
 
@@ -60,7 +60,8 @@ namespace VideoService
             {
                 app.UseHsts();
             }
-          //  app.UseAuthentication();
+
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

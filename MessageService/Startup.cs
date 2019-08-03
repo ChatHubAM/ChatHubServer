@@ -29,15 +29,15 @@ namespace MessageService
                 options.UseSqlServer(Configuration.GetConnectionString("ChatHubDatabase"));
             });
 
-            //services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
-            //       .AddIdentityServerAuthentication(options =>
-            //       {
-            //           options.Authority = "http://localhost:5000";
-            //           options.RequireHttpsMetadata = false;
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                   .AddIdentityServerAuthentication(options =>
+                   {
+                       options.Authority = "http://localhost:5000";
+                       options.RequireHttpsMetadata = false;
 
-            //           options.ApiName = "ActiveUserService";
-            //       }
-            //   );
+                       options.ApiName = "ActiveUserService";
+                   }
+               );
 
 
             services.AddScoped<IMessageRepository, MessageRepository>();
@@ -64,7 +64,8 @@ namespace MessageService
             {
                 app.UseHsts();
             }
-            //app.UseAuthentication();
+
+            app.UseAuthentication();
           //  app.UseHttpsRedirection();
             app.UseMvc();
         }
